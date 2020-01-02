@@ -18,13 +18,23 @@ public class MyMainClass {
 		java.util.Scanner myScanner = new java.util.Scanner(System.in);
 		User user = new User();
 		
-		System.out.println("First Name:");
+		System.out.println("entwr user first Name:");
 		String name = myScanner.nextLine();
 		user.setFirstName(name);
-		System.out.println(name + ", last name:");
+		System.out.println(name + ", enter user last name:");
 		name = myScanner.nextLine();
 		user.setLastName(name);
-		System.out.println(user.getFullName());
+		System.out.println("user full name:" + user.getFullName());
+		
+		Student student = new Student ();
+		name = myScanner.nextLine();
+		student.setFirstName(name);
+		System.out.println(name + ", enter student last name:");
+		name = myScanner.nextLine();
+		student.setLastName(name);
+		System.out.println("student full name:" + student.getFullName());
+		student.setFieldOfStudy("Informatic");
+		System.out.println("student field of study:" + student.getFieldOfStudy());
 	}
 
 	public void testMethod1 () {
