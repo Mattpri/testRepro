@@ -20,5 +20,8 @@ public class Student extends User implements Trainee{
 		return 0;
 	}
 	
-
+	@Override
+	public String getFullName() {
+		return getFirstName() + getLastName() + "-Student";
+	}
 }
