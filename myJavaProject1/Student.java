@@ -1,6 +1,6 @@
 package myJavaProject1;
 
-public class Student extends User {
+public class Student extends User implements Trainee{
 
 	private String fieldOfStudy;
 	
@@ -12,4 +12,13 @@ public class Student extends User {
 	public void setFieldOfStudy (String fOfStudy) {
 		this.fieldOfStudy = fOfStudy;
 	}
+
+
+	@Override
+	public int getParentCosts() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
 }
